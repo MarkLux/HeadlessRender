@@ -26,3 +26,16 @@ firefox geckodriver 配置
 '''
 
 FIREFOX_EXE_PATH = '/usr/local/Cellar/geckodriver/0.19.1/bin/geckodriver'
+
+'''
+实际使用dirver
+'''
+
+DRIVER = 'firefox'
+
+'''
+RPC服务配置
+'''
+
+RPC_HOST = 'localhost'
+RPC_PORT = 8099

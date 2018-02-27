@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as expected
 from config.constant import PAGE_LOAD_TIMEOUT
 
+
 class ChromeHeadlessDriver(BaseDriver):
     def __init__(self):
         self.options = webdriver.ChromeOptions()
@@ -24,7 +25,8 @@ class ChromeHeadlessDriver(BaseDriver):
     def get_html(self, url):
         self.driver.get(url)
         try:
-            WebDriverWait(self.driver, PAGE_LOAD_TIMEOUT, 0.5).until(expected.presence_of_element_located((By.TAG_NAME, 'body')))
+            WebDriverWait(self.driver, PAGE_LOAD_TIMEOUT, 0.5).until(
+                expected.presence_of_element_located((By.TAG_NAME, 'body')))
             return self.driver.page_source.encode('utf-8')
         except Exception as e:
             print 'exception:' + e.message
