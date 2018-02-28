@@ -25,7 +25,7 @@ PHANTOM_JS_EXE_PATH = '/usr/local/bin/phantomjs'
 firefox geckodriver 配置
 '''
 
-FIREFOX_EXE_PATH = '/usr/local/Cellar/geckodriver/0.19.1/bin/geckodriver'
+FIREFOX_EXE_PATH = '/opt/firefox/geckodriver'
 
 '''
 实际使用dirver
