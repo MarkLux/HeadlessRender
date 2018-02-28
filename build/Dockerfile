@@ -25,3 +25,5 @@ RUN git clone https://github.com/MarkLux/HeadlessRender.git
 EXPOSE 8080
 
 WORKDIR /home/HeadlessRender/service
+
+CMD python server.py
